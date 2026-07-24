@@ -773,6 +773,146 @@
           border: 1px solid #000;
         }
       }
+      /* =========================================================
+         🌟 RESPONSIVE MOBILE TWEAKS (TAMPILAN HANDPHONE) 🌟
+         ========================================================= */
+      @media screen and (max-width: 768px) {
+        /* Mengurangi padding body dan container agar layar tidak termakan ruang kosong */
+        body {
+          padding: 15px 10px;
+        }
+        
+        .container {
+          padding: 20px 15px;
+        }
+
+        /* Mengubah baris (row) menjadi kolom menyusun ke bawah */
+        .row {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        /* Memperbaiki tampilan Tab Menu agar menyusun ke bawah */
+        .menu-tabs {
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+        .tab-button {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        .tab-button .val {
+          font-size: 18px;
+        }
+
+        /* Menyesuaikan ukuran Modal & Form Login */
+        .login-card {
+          padding: 30px 20px;
+        }
+        
+        .modal-content {
+          padding: 20px 15px;
+        }
+
+        /* Merapikan Header Profil & Waktu */
+        .user-profile {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 12px;
+          text-align: center;
+        }
+
+        /* Merapikan tombol navigasi profil */
+        .user-actions button {
+          width: 100%;
+        }
+
+        /* Merapikan Grafik Chart.js agar memanjang ke bawah */
+        .chart-container-box {
+          flex-direction: column;
+        }
+        
+        .chart-item {
+          width: 100%;
+          min-width: 100%;
+          height: 250px;
+        }
+
+        /* Tombol Simpan & Batal menjadi full width */
+        .form-actions {
+          flex-direction: column;
+        }
+        
+        .btn-submit, .btn-cancel {
+          width: 100%;
+          margin-bottom: 5px;
+        }
+
+        /* Menyesuaikan judul Header Form */
+        h2#formTitle {
+          font-size: 18px;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        
+        h2#formTitle img {
+          width: 60px !important;
+        }
+
+        /* Merapikan menu tombol Ekspor, Cetak, Hapus di riwayat */
+        .header-riwayat {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+        
+        #tabelTitle {
+          font-size: 16px;
+        }
+
+        .group-tombol {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* Membagi tombol jadi 2 kolom sejajar */
+          gap: 8px;
+        }
+        
+        .group-tombol button {
+          width: 100%;
+          font-size: 12px;
+          padding: 10px 5px;
+          margin: 0;
+        }
+
+        /* Mempercantik Tabel dan Tombol Aksi di dalamnya */
+        th, td {
+          padding: 10px;
+          font-size: 13px;
+        }
+        
+        .btn-action-group {
+          flex-direction: column; /* Tombol aksi tabel menyusun ke bawah */
+          gap: 5px;
+        }
+        
+        .btn-action {
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Merapikan Paginasi agar tidak tumpang tindih */
+        .pagination-container {
+          flex-direction: column;
+          gap: 15px;
+        }
+        
+        .pagination-controls {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
     </style>
   </head>
 
